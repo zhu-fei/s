@@ -13,8 +13,8 @@ MainComponent::MainComponent()
 {
     //setSize (600, 400);
 	Rectangle<int> r = Desktop::getInstance().getDisplays().getMainDisplay().userArea;
-	float ratio = 0.618;
-	centreWithSize(r.getWidth() * ratio, r.getHeight()*ratio);
+	float ratio = 0.618f;
+	centreWithSize(int(r.getWidth() * ratio), int(r.getHeight()*ratio));
 }
 
 MainComponent::~MainComponent()
@@ -26,7 +26,7 @@ void MainComponent::paint (Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
     //g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));
-	g.fillAll(Colours::lightskyblue);
+	g.fillAll(Colours::black);
 
     g.setFont (Font (16.0f));
     g.setColour (Colours::white);
