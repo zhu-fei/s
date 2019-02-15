@@ -10,6 +10,7 @@
 
 //==============================================================================
 MainComponent::MainComponent()
+	:_tree("root")
 {
 
 	_lstBox = new ListBox("_lstBox");
@@ -21,7 +22,7 @@ MainComponent::MainComponent()
 	{
 		TComponentType * ct = hm[_curComponentIndex];
 		_curComponent = nullptr;
-		_curComponent = ct->createComponent();
+		_curComponent = ct->createComponent(_tree);
 		//_curSubComp->setFocusContainer(true);
 		addAndMakeVisible(_curComponent);
 	}

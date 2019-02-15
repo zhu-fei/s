@@ -72,7 +72,7 @@ public:
 		{
 			TComponentType * ct = hm[lastRowSelected];
 			_curComponent = nullptr;
-			_curComponent = ct->createComponent();
+			_curComponent = ct->createComponent(_tree);
 			addAndMakeVisible(_curComponent);
 			//	_curSubComp->setFocusContainer(true);
 			_curComponent->grabKeyboardFocus();
@@ -88,6 +88,9 @@ public:
 	ScopedPointer<Component> _curComponent;
 
 	int _curComponentIndex{ 0 };
+
+
+	ValueTree _tree;
 private:
     //==============================================================================
     // Your private member variables go here...

@@ -6,6 +6,10 @@
       <FILE id="krCT7z" name="ComponentList.h" compile="0" resource="0" file="Source/Common/ComponentList.h"/>
     </GROUP>
     <GROUP id="{CD4438A1-3D0B-A85B-A98C-BC02B3C645F5}" name="Components">
+      <FILE id="DLxNLH" name="ValueTreeDebugger.cpp" compile="1" resource="0"
+            file="Source/Components/ValueTreeDebugger.cpp"/>
+      <FILE id="Lot5EO" name="ValueTreeDebugger.h" compile="0" resource="0"
+            file="Source/Components/ValueTreeDebugger.h"/>
       <FILE id="vC0eoo" name="ValueTreeEditor.cpp" compile="1" resource="0"
             file="Source/Components/ValueTreeEditor.cpp"/>
       <FILE id="aI9xSC" name="ValueTreeEditor.h" compile="0" resource="0"

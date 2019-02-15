@@ -20,7 +20,7 @@
 //[Headers] You can add your own extra header files here...
 //[/Headers]
 
-#include "valueTreeEditor.h"
+#include "ValueTreeEditor.h"
 
 
 //[MiscUserDefs] You can add your own user definitions and misc code here...
@@ -28,7 +28,8 @@
 //[/MiscUserDefs]
 
 //==============================================================================
-valueTreeEditor::valueTreeEditor ()
+valueTreeEditor::valueTreeEditor (ValueTree& tree)
+    : _tree(tree)
 {
     //[Constructor_pre] You can add your own custom stuff here..
     //[/Constructor_pre]
@@ -61,7 +62,7 @@ void valueTreeEditor::paint (Graphics& g)
     //[UserPrePaint] Add your own custom painting code here..
     //[/UserPrePaint]
 
-    g.fillAll (Colours::blue);
+    g.fillAll (Colour (0xff323e44));
 
     //[UserPaint] Add your own custom painting code here..
     //[/UserPaint]
@@ -92,9 +93,10 @@ void valueTreeEditor::resized()
 BEGIN_JUCER_METADATA
 
 <JUCER_COMPONENT documentType="Component" className="valueTreeEditor" componentName=""
-                 parentClasses="public Component" constructorParams="" variableInitialisers=""
-                 snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330"
-                 fixedSize="0" initialWidth="600" initialHeight="400">
+                 parentClasses="public Component" constructorParams="ValueTree&amp; tree"
+                 variableInitialisers=" _tree(tree)" snapPixels="8" snapActive="1"
+                 snapShown="1" overlayOpacity="0.330" fixedSize="0" initialWidth="600"
+                 initialHeight="400">
   <BACKGROUND backgroundColour="ff323e44"/>
 </JUCER_COMPONENT>
 

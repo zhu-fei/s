@@ -16,7 +16,7 @@
 class TComponentType
 {
 public:
-	virtual Component* createComponent() = 0;
+	virtual Component* createComponent(ValueTree& tree) = 0;
 	TComponentType(const String &n, int index) : name(n), _index(index)
 	{
 		getCompTypeList().set(index, (TComponentType*)this);
@@ -45,8 +45,8 @@ public:
 	{
 	}
 
-	virtual Component* createComponent()
+	virtual Component* createComponent(ValueTree& tree)
 	{
-		return new TComponent();
+		return new TComponent(tree);
 	}
 };

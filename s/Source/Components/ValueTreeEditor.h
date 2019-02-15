@@ -37,7 +37,7 @@ class valueTreeEditor  : public Component
 {
 public:
     //==============================================================================
-    valueTreeEditor ();
+    valueTreeEditor (ValueTree& tree);
     ~valueTreeEditor();
 
     //==============================================================================
@@ -51,6 +51,7 @@ public:
 
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
+	ValueTree _tree;
     //[/UserVariables]
 
     //==============================================================================
