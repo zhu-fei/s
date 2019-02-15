@@ -75,6 +75,9 @@
     <ClInclude Include="..\..\Source\Common\ComponentList.h">
       <Filter>s\Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Common\OpenglUtility.h">
+      <Filter>s\Common</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Components\Pixel.h">
       <Filter>s\Components</Filter>
     </ClInclude>

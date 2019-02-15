@@ -160,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Common\ComponentList.h"/>
+    <ClInclude Include="..\..\Source\Common\OpenglUtility.h"/>
     <ClInclude Include="..\..\Source\Components\Pixel.h"/>
     <ClInclude Include="..\..\Source\Components\ValueTreeDebugger.h"/>
     <ClInclude Include="..\..\Source\Components\ValueTreeEditor.h"/>

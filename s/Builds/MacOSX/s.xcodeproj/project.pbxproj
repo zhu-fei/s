@@ -230,6 +230,13 @@
 			path = "../../JuceLibraryCode/include_juce_events.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		779DFC00A3855AFBA635E562 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = OpenglUtility.h;
+			path = ../../Source/Common/OpenglUtility.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		7C858F66E3EF11B559D441DE = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -388,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				03D024B80503DDA58F66FC25,
+				779DFC00A3855AFBA635E562,
 			);
 			name = Common;
 			sourceTree = "<group>";

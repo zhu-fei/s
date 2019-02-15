@@ -4,6 +4,7 @@
   <MAINGROUP id="MuAf9L" name="s">
     <GROUP id="{C41B593B-671F-7F3D-6CEE-18DCAD00A22A}" name="Common">
       <FILE id="krCT7z" name="ComponentList.h" compile="0" resource="0" file="Source/Common/ComponentList.h"/>
+      <FILE id="xolJVx" name="OpenglUtility.h" compile="0" resource="0" file="Source/Common/OpenglUtility.h"/>
     </GROUP>
     <GROUP id="{CD4438A1-3D0B-A85B-A98C-BC02B3C645F5}" name="Components">
       <FILE id="W0r5XT" name="Pixel.cpp" compile="1" resource="0" file="Source/Components/Pixel.cpp"/>

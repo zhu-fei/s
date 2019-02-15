@@ -51,6 +51,13 @@ public:
 
 private:
 	ValueTree _tree;
+
+
+	String _strVertex;
+	String _strFrag;
+
+
+
 private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TPixel)
 };
