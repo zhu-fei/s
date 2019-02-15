@@ -19,6 +19,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Components\Pixel.cpp">
+      <Filter>s\Components</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Components\ValueTreeDebugger.cpp">
       <Filter>s\Components</Filter>
     </ClCompile>
@@ -71,6 +74,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\Source\Common\ComponentList.h">
       <Filter>s\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Pixel.h">
+      <Filter>s\Components</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Components\ValueTreeDebugger.h">
       <Filter>s\Components</Filter>

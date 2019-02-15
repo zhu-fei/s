@@ -138,6 +138,7 @@
     <Lib/>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Components\Pixel.cpp"/>
     <ClCompile Include="..\..\Source\Components\ValueTreeDebugger.cpp"/>
     <ClCompile Include="..\..\Source\Components\ValueTreeEditor.cpp"/>
     <ClCompile Include="..\..\Source\MainComponent.cpp"/>
@@ -157,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\Common\ComponentList.h"/>
+    <ClInclude Include="..\..\Source\Components\Pixel.h"/>
     <ClInclude Include="..\..\Source\Components\ValueTreeDebugger.h"/>
     <ClInclude Include="..\..\Source\Components\ValueTreeEditor.h"/>
     <ClInclude Include="..\..\Source\MainComponent.h"/>

@@ -53,6 +53,14 @@
 			isa = PBXBuildFile;
 			fileRef = CB5BC1A5BB8FF44030802B76;
 		};
+		7C6EA8DC879B9E86DB33EB9E = {
+			isa = PBXBuildFile;
+			fileRef = E3F08887E3E813B1E1F3BB4A;
+		};
+		1CBF183AEDB0529482B0C399 = {
+			isa = PBXBuildFile;
+			fileRef = EFB4EED56C892035BEE83EF6;
+		};
 		A32942CA29B0B59F11070B30 = {
 			isa = PBXBuildFile;
 			fileRef = 2BDE2351BBAC12FD30C273C7;
@@ -341,12 +349,26 @@
 			path = "../../JuceLibraryCode/include_juce_graphics.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		E3F08887E3E813B1E1F3BB4A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = Pixel.cpp;
+			path = ../../Source/Components/Pixel.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
 		E3FD646241FACE6371BC1F4F = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = IOKit.framework;
 			path = System/Library/Frameworks/IOKit.framework;
 			sourceTree = SDKROOT;
+		};
+		EFB4EED56C892035BEE83EF6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = Pixel.h;
+			path = ../../Source/Components/Pixel.h;
+			sourceTree = "SOURCE_ROOT";
 		};
 		F48C990C0BC5AC16B39D6DA3 = {
 			isa = PBXFileReference;
@@ -373,6 +395,8 @@
 		B83D7036061ECAEC7D70528D = {
 			isa = PBXGroup;
 			children = (
+				E3F08887E3E813B1E1F3BB4A,
+				EFB4EED56C892035BEE83EF6,
 				2BDE2351BBAC12FD30C273C7,
 				8092F5EF319E76DAC6398CA4,
 				C9DADA8CB87715C88B1CCDE8,
@@ -680,6 +704,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6EA8DC879B9E86DB33EB9E,
+				1CBF183AEDB0529482B0C399,
 				A32942CA29B0B59F11070B30,
 				ADE20BCDAC8798255266B634,
 				DDF17707FBDA2F595B88F548,
