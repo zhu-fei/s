@@ -86,7 +86,7 @@
     <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
   </MODULES>
   <LIVE_SETTINGS>
-    <WINDOWS buildEnabled="1" systemHeaderPath="C:\Program Files (x86)\Windows Kits\8.1\Include\um&#10;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt&#10;E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include"/>
+    <WINDOWS buildEnabled="1" systemHeaderPath="C:\Program Files (x86)\Windows Kits\8.1\Include\um&#10;E:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include"/>
   </LIVE_SETTINGS>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
 </JUCERPROJECT>

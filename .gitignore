@@ -3,3 +3,6 @@ s/Builds/VisualStudio2015/x64/
 s/Builds/VisualStudio2015/s.VC.db
 s/Builds/VisualStudio2015/s.VC.VC.opendb
 s/Builds/VisualStudio2015/.vs
+s/Builds/VisualStudio2017/.vs
+s/Builds/VisualStudio2017/x64
+*.user
