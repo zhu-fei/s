@@ -11,6 +11,23 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
+
+	_lstBox = new ListBox("_lstBox");
+	_lstBox->setModel(this);
+	addAndMakeVisible(_lstBox);
+
+	HashMap <int, TComponentType*>& hm = TComponentType::getCompTypeList();
+	if (hm.contains(_curComponentIndex))
+	{
+		TComponentType * ct = hm[_curComponentIndex];
+		_curComponent = nullptr;
+		_curComponent = ct->createComponent();
+		//_curSubComp->setFocusContainer(true);
+		addAndMakeVisible(_curComponent);
+	}
+
+
+
     //setSize (600, 400);
 	Rectangle<int> r = Desktop::getInstance().getDisplays().getMainDisplay().userArea;
 	float ratio = 0.618f;
@@ -19,6 +36,7 @@ MainComponent::MainComponent()
 
 MainComponent::~MainComponent()
 {
+	_lstBox = nullptr;
 }
 
 //==============================================================================
@@ -40,5 +58,17 @@ void MainComponent::resized()
     // If you add any child components, this is where you should
     // update their positions.
 
+	auto r = getLocalBounds();
+	int listBoxWidth = roundToInt(proportionOfWidth(0.2000f));
+	if (_lstBox)
+		_lstBox->setBounds(r.removeFromLeft(listBoxWidth));
+
+
+	if (_curComponent)
+		_curComponent->setBounds(r);
+
+
+
+	
 
 }
