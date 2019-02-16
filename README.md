@@ -19,12 +19,18 @@ git commit -m "add submodule"
 
 
 
-ɾ����ģ��ϸ��ӣ��������£�
+删除子模块较复杂，步骤如下：
 
-rm -rf ��ģ��Ŀ¼ ɾ����ģ��Ŀ¼��Դ��
-vi .gitmodules ɾ����ĿĿ¼��.gitmodules�ļ�����ģ�������Ŀ
-vi .git/config ɾ������������ģ�������Ŀ
-rm .git/module/* ɾ��ģ���µ���ģ��Ŀ¼��ÿ����ģ���Ӧһ��Ŀ¼��ע��ֻɾ����Ӧ����ģ��Ŀ¼����
-ִ����ɺ���ִ��������ģ������ɣ������Ȼ������ִ�����£�
+rm -rf 子模块目录 删除子模块目录及源码
+vi .gitmodules 删除项目目录下.gitmodules文件中子模块相关条目
+vi .git/config 删除配置项中子模块相关条目
+rm .git/module/* 删除模块下的子模块目录，每个子模块对应一个目录，注意只删除对应的子模块目录即可
+执行完成后，再执行添加子模块命令即可，如果仍然报错，执行如下：
 
-git rm --cached ��ģ������
+git rm --cached 子模块名称
+
+
+git reset back:
+git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96  
+
+git push -f -u origin master  
